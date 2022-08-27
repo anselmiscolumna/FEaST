@@ -11,3 +11,33 @@ h2{
     text-align: center;
     background-color: lightcoral;
 }
+
+ul{
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    display: inline;
+    float: left;
+    padding: 8px;
+    background-color: #dddddd;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+/*
+li a:hover {
+    background-color: #fff;
+}
+*/
