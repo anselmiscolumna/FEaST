@@ -1,7 +1,13 @@
 h1{
-    Color: Blue;
+    Color: Red;
     text-align: center;
     background-color: aliceblue;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
     padding-top: 10px;
+}
+
+h2{
+    Color: White;
+    text-align: center;
+    background-color: lightcoral;
 }
