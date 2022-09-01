@@ -41,9 +41,10 @@ a {
     color: red;
 }
 
-.dropdown-content{
+a .dropdown-content{
     overflow: hidden;
     display: inline;
+    color: purple;
 }
 
 /*
