@@ -12,13 +12,7 @@ h2{
     background-color: lightcoral;
 }
 
-ul{
-    /*position: fixed;*/
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
+
 
 li{
     display: inline;
@@ -26,9 +20,18 @@ li{
     padding: 8px;
     background-color: #dddddd;
 }
+/*
+
+ul{
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
 
 li.locations{
-    display: inline-block;
+    display: inline;
 }
 
 li a, .locations {
@@ -69,3 +72,4 @@ li.dropdown{
 .active {
     background-color: #04AA6D;
 }
+*/
