@@ -41,10 +41,14 @@ a {
     color: red;
 }
 
-a .dropdown-content{
-    overflow: hidden;
-    display: inline;
+a:hover .locations{
     color: purple;
+}
+
+.dropdown-content a{
+    display: inline-block;
+    color: darkslategray;
+    
 }
 
 /*
