@@ -51,6 +51,14 @@ a:hover .locations{
     
 }
 
+/* Navigation */
+.navbar {
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,0.1);
+}
+
 /*
 
 ul{
