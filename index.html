@@ -20,55 +20,36 @@
     </header>
 
     <body>
-        <!-- <nav class="navbar fixed-top navbar-expand-lg bg-light navbar-light">
-            <div class="container">
-                <a href="FEaST_Home.html" class="navbar-brand logo-text">FEaST</a>
+      <!-- Upper Nav Bar for the log in -->
+      <nav class="navbar navbar-expand-lg bg-light UpperNav">
+        <div class="container-fluid justify-content-end">
+          <a href="">Log In</a>
+        </div>
+      </nav>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="navitem"><a href="FEaST_Home.html" class="nav-link active">Home</a></li>
-                        <li class="navitem"><a href="" class="nav-link">About</a></li>
-                        <li class="navitem dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Locations</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#" class="dropdown-item">Caf</a></li>
-                                <li><a href="#" class="dropdown-item">Caf</a></li>
-                                <li><a href="#" class="dropdown-item">Caf</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a href="#" class="dropdown-item">Caf</a></li>
-                            </ul>
-                        </li>
-                        <li class="navitem"><a href="" class="nav-link">Projects</a></li>
-                        <li class="navitem"><a href="" class="nav-link">About Us</a></li>
-                    </ul>
-                </div>
-
-            </div>
-        </nav> -->
-
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><box-icon name='food-menu' type='solid' class="bx"></box-icon></a>
+      <!-- Lower Nav Bar for proper Navigation -->
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container-fluid bg-white">
+              <a class="navbar-brand" href="index.html"><img src="Images/FeastIcon.png" alt="Feast Logo" width = 50 height = 50></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
+
               <div class="collapse navbar-collapse justify-content-end" id="navbarScroll">
                 <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                   </li>
+
                   <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>
                   </li>
+
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Locations
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu"> <!-- This UL holds all of the different food locations on campus.-->
                       <li><hr class="dropdown-divider">Computer Science</li>
                       <li><a class="dropdown-item" href="#">Fresh Twist (Pretzel Place)</a></li>
                       <li><hr class="dropdown-divider">The Cafeteria (Caf)</li>
@@ -96,9 +77,13 @@
             </div>
           </nav>
 
+          <!-- Rest of the Body -->
+
         <h1>
             Welcome to FEaST
         </h1>
+
+        <!-- Carousel -->
 
         <img src = "Images/Welcome_Stock_Image.jpg" alt = "Stock Welcome Image." >
         
@@ -114,22 +99,34 @@
         <br />
 
         <h2>Locations</h2>
-        
-        <ol>
-            <li>Fresh Twist (Pretzel Place)</li>
-            <li>Wynee's Bistro (Caf)</li>
-            <li>Sushi</li>
-            <li>Steak and Shake</li>
-            <li>Boar's Head Deli (Undercaf)</li>
-            <li>Freshen's Smoothies</li>
-            <li>Buckstop</li>
-            <li>Happy Place</li>
-            <li>New Place (Name Pending)</li>
-            <li>Tutu's Cyber Cafe</li>
-            <li>Grill Master</li>
-        </ol>
+        <!-- Three Column Section -->
+        <div class="container">
+          <div class="row my-5">
 
-        <br />
+            <div class="col-md-4 my-4">
+              <img src="Images/FeastIcon.png" alt="" class="w-75 justify-content-center">
+              <h4 class="my-4">"Fresh Twist"</h4>
+              <p>Located in the Weinstein Computer Science Building, a great place to get your twist fix.</p>
+              <a href="#" class="btn btn-outline-dark btn-md">Order Now</a>
+            </div>
+
+            
+
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="portfolio-item">
+              <img src="Images/FeastIcon.png" alt="" class ="w-100">
+              <div class="portfolio-overlay">
+                  <div>
+                      <h3>Project title</h3>
+                      <h6>Project subtitle</h6>
+                  </div>
+              </div>
+          </div>
+
+        <!-- End Three Column Section -->
+        
 
         <div id="AboutUs">
           <h2>About Us</h2>
