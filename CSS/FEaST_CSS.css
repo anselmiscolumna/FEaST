@@ -91,6 +91,18 @@ a:hover #Locations{
     box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,0.1);
 }
 
+.navbar .nav-link {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    Color: Red;
+}
+
+.navbar-nav .nav-link.active {
+    color: grey;
+}
+
 .navbar-brand {
     font-weight: 700;
     font-size: 26px;
