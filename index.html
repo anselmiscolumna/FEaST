@@ -1,136 +1,139 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <header>
-        <meta charset = "utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>FEaST Web App</title>
-        <!-- Need to get an icon for the website and add it here. -->
-        <link rel="icon" href="Images/FeastIcon.png">
+<html lang="en">
+<header>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FEaST Web App</title>
+  <!-- Need to get an icon for the website and add it here. -->
+  <link rel="icon" href="Images/FeastIcon.png">
 
-        <!-- 
+  <!-- 
         Created by Sebastian Skippy Paquette, Austin Scheetz, and Anselmis AC Columna for our 2022/2023 School Year.
         The web app is called FEaST (Food Expedited and Service Terminal) and will serve as a mobile ordering system for our campus's food locations.
         -->
 
 
-      <!-- Bootstrap 5.2.1 CSS -->
-	    <link rel="stylesheet" href="CSS/bootstrap.min.css">
-      <!-- External CSS File Link -->
-      <link rel="stylesheet" href="CSS/FEaST_CSS.css">
-    </header>
+  <!-- Bootstrap 5.2.1 CSS -->
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <!-- External CSS File Link -->
+  <link rel="stylesheet" href="CSS/FEaST_CSS.css">
+</header>
 
-    <body data-bs-spy="scroll" data-bs-target=".navbar">
-      <!-- Top Bar for the log in -->
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+  <!-- Top Bar for the log in -->
 
-      <div class="top-bar bg-light UpperNav">
-        <div class="container">
-          <div class="col-12">
-            <button type = "button" data-toggle = "modal" data-target = "#modal1" class="btn btn-primary btn-sm">Log In</button>
-          </div>
-        </div>
+  <div class="top-bar bg-light UpperNav">
+    <div class="container">
+      <div class="col-12">
+        <button type="button" data-toggle="modal" data-target="#modal1" class="btn btn-primary btn-sm">Log In</button>
       </div>
+    </div>
+  </div>
 
-      <!-- End Top Bar -->
+  <!-- End Top Bar -->
 
-      <!-- Lower Nav Bar for proper Navigation. It's sticky and has Scroll spy in it so it will highlight the section we are currently in.-->
-        <nav class="navbar sticky-top navbar-expand-lg bg-white">
-            <div class="container-fluid bg-white">
-              <a class="navbar-brand" href="index.html"><img src="Images/FeastIcon.png" alt="Feast Logo" width = 50 height = 50></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+  <!-- Lower Nav Bar for proper Navigation. It's sticky and has Scroll spy in it so it will highlight the section we are currently in.-->
+  <nav class="navbar sticky-top navbar-expand-lg bg-white">
+    <div class="container-fluid bg-white">
+      <a class="navbar-brand" href="index.html"><img src="Images/FeastIcon.png" alt="Feast Logo" width=50 height=50></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-              <div class="collapse navbar-collapse justify-content-end" id="navbarScroll">
-                <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#Home">Home</a>
-                  </li>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarScroll">
+        <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+          </li>
 
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
 
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#Locations" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Locations
-                    </a>
-                    <ul class="dropdown-menu"> <!-- This UL holds all of the different food locations on campus.-->
-                      <li>Computer Science</li>
-                      <li><a class="dropdown-item" href="#">Fresh Twist (Pretzel Place)</a></li>
-                      <li>The Cafeteria (Caf)</li>
-                      <li><a class="dropdown-item" href="#">Wynee's Bistro</a></li>
-                      <li><a class="dropdown-item" href="#">Superbowls</a></li>
-                      <li><a class="dropdown-item" href="#">Sushi Place</a></li>
-                      <li><a class="dropdown-item" href="#">Steak and Shake</a></li>
-                      <li>Undercaf</li>
-                      <li><a class="dropdown-item" href="#">Boar's Head Deli</a></li>
-                      <li><a class="dropdown-item" href="#">Freshen's</a></li>
-                      <li>Central Campus</li>
-                      <li><a class="dropdown-item" href="#">Buckstop</a></li>
-                      <li>South Side of Campus</li>
-                      <li><a class="dropdown-item" href="#">Happy Place</a></li>
-                      <li><a class="dropdown-item" href="#">Mocketship</a></li>
-                      <li><a class="dropdown-item" href="#">Tutu's Cyber Cafe</a></li>
-                      <li><a class="dropdown-item" href="#">Grill Master</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#AboutUs">About Us</a>
-                  </li>
-                </ul>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#Locations" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Locations
+            </a>
+            <ul class="dropdown-menu">
+              <!-- This UL holds all of the different food locations on campus.-->
+              <li>Computer Science</li>
+              <li><a class="dropdown-item" href="#">Fresh Twist (Pretzel Place)</a></li>
+              <li>The Cafeteria (Caf)</li>
+              <li><a class="dropdown-item" href="#">Wynee's Bistro</a></li>
+              <li><a class="dropdown-item" href="#">Superbowls</a></li>
+              <li><a class="dropdown-item" href="#">Sushi Place</a></li>
+              <li><a class="dropdown-item" href="#">Steak and Shake</a></li>
+              <li>Undercaf</li>
+              <li><a class="dropdown-item" href="#">Boar's Head Deli</a></li>
+              <li><a class="dropdown-item" href="#">Freshen's</a></li>
+              <li>Central Campus</li>
+              <li><a class="dropdown-item" href="#">Buckstop</a></li>
+              <li>South Side of Campus</li>
+              <li><a class="dropdown-item" href="#">Happy Place</a></li>
+              <li><a class="dropdown-item" href="#">Mocketship</a></li>
+              <li><a class="dropdown-item" href="#">Tutu's Cyber Cafe</a></li>
+              <li><a class="dropdown-item" href="#">Grill Master</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#AboutUs">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="modal fade" id="modal1">
+    <div class="modal-dialog">
+      <p>Hello There</p>
+    </div>
+  </div>
+
+  <!-- Rest of the Body -->
+  <div id="Home">
+    <h1>
+      Welcome to FEaST
+    </h1>
+
+    <!-- Carousel -->
+
+    <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="6500">
+
+      <!-- Carousel Content -->
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="Images/Welcome_Stock_Image.jpg" alt="" class="w-100">
+          <div class="carousel-caption">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-8 bg-custom d-none d-md-block py-3 px-0">
+                  <h1>The FEaST App</h1>
+                  <div class="border-top border-primary w-50 mx-auto my-3"></div>
+                  <h3 class="pb-3">Start Ordering Today</h3>
+                </div>
               </div>
             </div>
-        </nav>
-
-        <div class="modal fade" id="modal1">
-          <div class="modal-dialog">
-            <p>Hello There</p>
           </div>
         </div>
 
-          <!-- Rest of the Body -->
-          <div id ="Home">
-            <h1>
-              Welcome to FEaST
-            </h1>
-  
-            <!-- Carousel -->
-    
-            <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="6500">
-    
-              <!-- Carousel Content -->
-              <div class="carousel-inner">
-          
-                <div class="carousel-item active">
-                  <img src="Images/Welcome_Stock_Image.jpg" alt="" class="w-100">
-                  <div class="carousel-caption">
-                    <div class="container">
-                      <div class="row justify-content-center">
-                        <div class="col-8 bg-custom d-none d-md-block py-3 px-0">
-                          <h1>The FEaST App</h1>
-                          <div class="border-top border-primary w-50 mx-auto my-3"></div>
-                          <h3 class="pb-3">Start Ordering Today</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+        <div class="carousel-item">
+          <img src="Images/FeastIcon.png" alt="" class="w-100">
+          <div class="carousel-caption">
+            <div class="container">
+              <div class="row justify-content-end text-right">
+                <div class="col-5 bg-custom d-none d-lg-block py-3 px-0 pr-3">
+                  <p class="lead pb-3">A Mobile Friendly HTML & CSS Website Design.</p>
+                  <a href="#" class="btn btn-danger btn-lg">See Phone</a>
                 </div>
-          
-                <div class="carousel-item">
-                  <img src="Images/FeastIcon.png" alt="" class="w-100">
-                  <div class="carousel-caption">
-                    <div class="container">
-                      <div class="row justify-content-end text-right">
-                        <div class="col-5 bg-custom d-none d-lg-block py-3 px-0 pr-3">
-                          <p class="lead pb-3">A Mobile Friendly HTML & CSS Website Design.</p>
-                          <a href="#" class="btn btn-danger btn-lg">See Phone</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-          
-                <!-- <div class="carousel-item">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="carousel-item">
                   <img src="img/carousel/3.jpg" alt="" class="w-100">
                   <div class="carousel-caption">
                     <div class="container">
@@ -144,197 +147,198 @@
                     </div>
                   </div>
                 </div> -->
-          
-              </div>
-              <!-- End Carousel Content -->
-          
-          
-              <!-- Previous & Next Buttons -->
-          
-              <a href="#carousel" class="carousel-control-prev" role="button" data-slide="prev">
-                <span class="fas fa-chevron-left fa-2x"></span>
-              </a>
-          
-              <a href="#carousel" class="carousel-control-next" role="button" data-slide="next">
-                <span class="fas fa-chevron-right fa-2x"></span>
-              </a>
-          
-              <!-- End Previous & Next Buttons -->
-          
-            </div> <!-- End of the Carousel Div -->
-          </div> <!-- End of the Home Div -->
-        
-        
-        <div id="link">
-          <h2>FEaSt Link</h2>
-        </div>
 
-      <div class="justify-content-center">
-        <p>
-            This the FEaST ordering Web Application, you can order food from 11 out of the 12 food service locations we have on campus.
-        </p>
       </div>
+      <!-- End Carousel Content -->
 
 
-        <br />
+      <!-- Previous & Next Buttons -->
 
-        <h2>Locations</h2>
-        <!-- Three Column Section -->
-        <Section id="Locations" class="row g-0">
+      <a href="#carousel" class="carousel-control-prev" role="button" data-slide="prev">
+        <span class="fas fa-chevron-left fa-2x"></span>
+      </a>
 
-          <!-- Computer Science Section (Fresh Twist) -->
-          <div class="col-lg-3 col-sm-6">
-            <div class="food-location">
-                <img src="Images/FeastIcon.png" alt="" class ="w-100">
-                <div class="location-overlay">
-                    <div>
-                        <h3>Fresh Twist</h3>
-                        <h6>Located in the Weinstein Computer Science Building, a great place to get your twist fix.</h6>
-                    </div>
-                </div>
-            </div>
+      <a href="#carousel" class="carousel-control-next" role="button" data-slide="next">
+        <span class="fas fa-chevron-right fa-2x"></span>
+      </a>
+
+      <!-- End Previous & Next Buttons -->
+
+    </div> <!-- End of the Carousel Div -->
+  </div> <!-- End of the Home Div -->
+
+
+  <div id="link">
+    <h2>FEaSt Link</h2>
+  </div>
+
+  <div class="justify-content-center">
+    <p>
+      This the FEaST ordering Web Application, you can order food from 11 out of the 12 food service locations we have
+      on campus.
+    </p>
+  </div>
+
+
+  <br />
+
+  <h2>Locations</h2>
+  <!-- Three Column Section -->
+  <Section id="Locations" class="row g-0">
+
+    <!-- Computer Science Section (Fresh Twist) -->
+    <div class="col-lg-3 col-sm-6">
+      <div class="food-location">
+        <img src="Images/FeastIcon.png" alt="" class="w-100">
+        <div class="location-overlay">
+          <div>
+            <h3>Fresh Twist</h3>
+            <h6>Located in the Weinstein Computer Science Building, a great place to get your twist fix.</h6>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <!-- The Caf Section (Wynee's Bistro {In the Lower Section}, Sushi Place, Superbowls, Steak and Shake) -->
-          <div class="col-lg-3 col-sm-6">
-            <div class="food-location">
-                <img src="Images/FeastIcon.png" alt="" class ="w-100">
-                <div class="location-overlay">
-                    <div>
-                        <h3>Sushi Place</h3>
-                        <h6>Located inside of Wynee's Bistro, when you're looking for that fish on/in a roll fix.</h6>
-                    </div>
-                </div>
-            </div>
+    <!-- The Caf Section (Wynee's Bistro {In the Lower Section}, Sushi Place, Superbowls, Steak and Shake) -->
+    <div class="col-lg-3 col-sm-6">
+      <div class="food-location">
+        <img src="Images/FeastIcon.png" alt="" class="w-100">
+        <div class="location-overlay">
+          <div>
+            <h3>Sushi Place</h3>
+            <h6>Located inside of Wynee's Bistro, when you're looking for that fish on/in a roll fix.</h6>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <div class="col-lg-3 col-sm-6">
-            <div class="food-location">
-                <img src="Images/FeastIcon.png" alt="" class ="w-100">
-                <div class="location-overlay">
-                    <div>
-                        <h3>Super Bowls</h3>
-                        <h6>Located inside of Wynee's Bistro, when you're looking for that alternative fix.</h6>
-                    </div>
-                </div>
-            </div>
+    <div class="col-lg-3 col-sm-6">
+      <div class="food-location">
+        <img src="Images/FeastIcon.png" alt="" class="w-100">
+        <div class="location-overlay">
+          <div>
+            <h3>Super Bowls</h3>
+            <h6>Located inside of Wynee's Bistro, when you're looking for that alternative fix.</h6>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <div class="col-lg-3 col-sm-6">
-            <div class="food-location">
-                <img src="Images/FeastIcon.png" alt="" class ="w-100">
-                <div class="location-overlay">
-                    <div>
-                        <h3>Steak & Shake</h3>
-                        <h6>Located inside of Wynee's Bistro, when you're looking for that shake fix.</h6>
-                    </div>
-                </div>
-            </div>
+    <div class="col-lg-3 col-sm-6">
+      <div class="food-location">
+        <img src="Images/FeastIcon.png" alt="" class="w-100">
+        <div class="location-overlay">
+          <div>
+            <h3>Steak & Shake</h3>
+            <h6>Located inside of Wynee's Bistro, when you're looking for that shake fix.</h6>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <!-- Undercaf Section (Boar's Head Deli and Freshens) -->
-          <div class="col-lg-3 col-sm-6">
-            <div class="food-location">
-                <img src="Images/FeastIcon.png" alt="" class ="w-100">
-                <div class="location-overlay">
-                    <div>
-                        <h3>Boar's Head Deli</h3>
-                        <h6>Located underneath of Wynee's Bistro, when you're looking for that sandwich fix.</h6>
-                    </div>
-                </div>
-            </div>
+    <!-- Undercaf Section (Boar's Head Deli and Freshens) -->
+    <div class="col-lg-3 col-sm-6">
+      <div class="food-location">
+        <img src="Images/FeastIcon.png" alt="" class="w-100">
+        <div class="location-overlay">
+          <div>
+            <h3>Boar's Head Deli</h3>
+            <h6>Located underneath of Wynee's Bistro, when you're looking for that sandwich fix.</h6>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <div class="col-lg-3 col-sm-6">
-            <div class="food-location">
-                <img src="Images/FeastIcon.png" alt="" class ="w-100">
-                <div class="location-overlay">
-                    <div>
-                        <h3>Freshen's</h3>
-                        <h6>Located underneath of Wynee's Bistro, when you're looking for that smoothie fix.</h6>
-                    </div>
-                </div>
-            </div>
+    <div class="col-lg-3 col-sm-6">
+      <div class="food-location">
+        <img src="Images/FeastIcon.png" alt="" class="w-100">
+        <div class="location-overlay">
+          <div>
+            <h3>Freshen's</h3>
+            <h6>Located underneath of Wynee's Bistro, when you're looking for that smoothie fix.</h6>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <!-- Central Campus Section (Buckstop) -->
-          <div class="col-lg-3 col-sm-6">
-            <div class="food-location">
-                <img src="Images/FeastIcon.png" alt="" class ="w-100">
-                <div class="location-overlay">
-                    <div>
-                        <h3>Buckstop</h3>
-                        <h6>Located in between Spivey/JR & Ordway, when you're looking for that pizza fix.</h6>
-                    </div>
-                </div>
-            </div>
+    <!-- Central Campus Section (Buckstop) -->
+    <div class="col-lg-3 col-sm-6">
+      <div class="food-location">
+        <img src="Images/FeastIcon.png" alt="" class="w-100">
+        <div class="location-overlay">
+          <div>
+            <h3>Buckstop</h3>
+            <h6>Located in between Spivey/JR & Ordway, when you're looking for that pizza fix.</h6>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <!-- South Side of Campus (Happy Place, Mocketship, Tutu's Cyber Cafe, Grill Master) -->
-          <div class="col-lg-3 col-sm-6">
-            <div class="food-location">
-                <img src="Images/FeastIcon.png" alt="" class ="w-100">
-                <div class="location-overlay">
-                    <div>
-                        <h3>Happy Place</h3>
-                        <h6>Located outside of Branscomb Auditorium, when you're looking for that happy fix.</h6>
-                    </div>
-                </div>
-            </div>
+    <!-- South Side of Campus (Happy Place, Mocketship, Tutu's Cyber Cafe, Grill Master) -->
+    <div class="col-lg-3 col-sm-6">
+      <div class="food-location">
+        <img src="Images/FeastIcon.png" alt="" class="w-100">
+        <div class="location-overlay">
+          <div>
+            <h3>Happy Place</h3>
+            <h6>Located outside of Branscomb Auditorium, when you're looking for that happy fix.</h6>
           </div>
-          
-          <div class="col-lg-3 col-sm-6">
-            <div class="food-location">
-                <img src="Images/FeastIcon.png" alt="" class ="w-100">
-                <div class="location-overlay">
-                    <div>
-                        <h3>Mocketship</h3>
-                        <h6>Located outside of Branscomb Auditorium, when you're looking for that healthy fix.</h6>
-                    </div>
-                </div>
-            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-sm-6">
+      <div class="food-location">
+        <img src="Images/FeastIcon.png" alt="" class="w-100">
+        <div class="location-overlay">
+          <div>
+            <h3>Mocketship</h3>
+            <h6>Located outside of Branscomb Auditorium, when you're looking for that healthy fix.</h6>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <div class="col-lg-3 col-sm-6">
-            <div class="food-location">
-                <img src="Images/FeastIcon.png" alt="" class ="w-100">
-                <div class="location-overlay">
-                    <div>
-                        <h3>Tutu's Cyber Cafe</h3>
-                        <h6>Located inside of the Roux Library, when you're looking for that Starbucks & assorted sandwich fix.</h6>
-                    </div>
-                </div>
-            </div>
+    <div class="col-lg-3 col-sm-6">
+      <div class="food-location">
+        <img src="Images/FeastIcon.png" alt="" class="w-100">
+        <div class="location-overlay">
+          <div>
+            <h3>Tutu's Cyber Cafe</h3>
+            <h6>Located inside of the Roux Library, when you're looking for that Starbucks & assorted sandwich fix.</h6>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <div class="col-lg-3 col-sm-6">
-            <div class="food-location">
-                <img src="Images/FeastIcon.png" alt="" class ="w-100">
-                <div class="location-overlay">
-                    <div>
-                        <h3>Grillmaster</h3>
-                        <h6>Located outside of the Roux Library, ordered at Tutu's, when you're looking for that grilled fix.</h6>
-                    </div>
-                </div>
-            </div>
+    <div class="col-lg-3 col-sm-6">
+      <div class="food-location">
+        <img src="Images/FeastIcon.png" alt="" class="w-100">
+        <div class="location-overlay">
+          <div>
+            <h3>Grillmaster</h3>
+            <h6>Located outside of the Roux Library, ordered at Tutu's, when you're looking for that grilled fix.</h6>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <!-- The Caf -->
-          <div class="col-lg-3 col-sm-6">
-            <div class="food-location">
-                <img src="Images/FeastIcon.png" alt="" class ="w-100">
-                <div class="location-overlay">
-                    <div>
-                        <h3>Wynee's Bistro</h3>
-                        <h6>The caf, coming soon.</h6>
-                    </div>
-                </div>
-            </div>
+    <!-- The Caf -->
+    <div class="col-lg-3 col-sm-6">
+      <div class="food-location">
+        <img src="Images/FeastIcon.png" alt="" class="w-100">
+        <div class="location-overlay">
+          <div>
+            <h3>Wynee's Bistro</h3>
+            <h6>The caf, coming soon.</h6>
           </div>
+        </div>
+      </div>
+    </div>
 
 
-          <!-- Big Image for the Caf -->
-          <!-- <div class="col-lg-12 col-sm-12">
+    <!-- Big Image for the Caf -->
+    <!-- <div class="col-lg-12 col-sm-12">
             <div class="food-location">
               <img src="Images/FeastIcon.png" alt="" class="w-25 justify-content-center">
                 <div class="location-overlay">
@@ -347,113 +351,120 @@
             </div>
           </div> -->
 
-      </Section>
+  </Section>
 
-      <br />
+  <br />
 
-        <!-- End Three Column Section -->
-        
+  <!-- End Three Column Section -->
 
-      <div id="AboutUs">
-        <h2>The Team</h2>
-        <section id="team" class="row g-0 py-0 text-center">
-          <div class="col-lg-3 col-sm-6 team-member">
-              <div class="team-member-img">
-                  <img src="Images/FeastIcon.png" alt="">
-                  <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                  </div>
-              </div>
-              <div class="p-4">
-                  <h5 class="title-sm mt-3 mb-0 text-white">Anselmis 'AC' Columna</h5>
-                  <small class="text-white">CS Student - AI & Machine Learning</small>
-                  <div class="hline"></div>
-                  <p class="text-white">Well skillful lorem Ipsum is not simply random text. It has roots in a place of classical Latin literature from 45 BC</p>
-              </div>
-          </div>
-  
-          <div class="col-lg-3 col-sm-6 team-member even">
-              <div class="team-member-img">
-                  <img src="Images/FeastIcon.png" alt="">
-                  <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                  </div>
-              </div>
-              <div class="p-4">
-                  <h5 class="title-sm mt-3 mb-0 text-white">Austin Scheetz</h5>
-                  <small class="text-white">CS Student - AI & Machine Learning</small>
-                  <div class="hline"></div>
-                  <p class="text-white">Well skillful lorem Ipsum is not simply random text. It has roots in a place of classical Latin literature from 45 BC</p>
-              </div>
-          </div>
-  
-          <div class="col-lg-3 col-sm-6 team-member">
-              <div class="team-member-img">
-                  <img src="Images/FeastIcon.png" alt="">
-                  <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                  </div>
-              </div>
-              <div class="p-4">
-                  <h5 class="title-sm mt-3 mb-0 text-white">Sebastian 'Skippy' Paquette</h5>
-                  <small class="text-white">CS Student - AI & Machine Learning</small>
-                  <div class="hline"></div>
-                  <p class="text-white">Well skillful lorem Ipsum is not simply random text. It has roots in a place of classical Latin literature from 45 BC</p>
-              </div>
-          </div>
-  
-          <div class="col-lg-3 col-sm-6 team-member even">
-              <div class="team-member-img">
-                  <img src="Images/FeastIcon.png" alt="">
-                  <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                  </div>
-              </div>
-              <div class="p-4">
-                  <h5 class="title-sm mt-3 mb-0 text-white">Dr. Cazalas</h5>
-                  <small class="text-white">Professor and Project Advisor</small>
-                  <div class="hline"></div>
-                  <p class="text-white">Well skillful lorem Ipsum is not simply random text. It has roots in a place of classical Latin literature from 45 BC</p>
-              </div>
-          </div>
-  
-        </section>
-      </div>
 
-      <footer>
-        <div class="container">
-          <div class="row text-light text-center py-2 justify-content-center">
-            <div class="col-sm-10 col-md-8 col-lg-2">
-              <p><a href="" id="Home">Return to Top</a></p>
-            </div>
+  <div id="AboutUs">
+    <h2>The Team</h2>
+    <section id="team" class="row g-0 py-0 text-center">
+      <div class="col-lg-3 col-sm-6 team-member">
+        <div class="team-member-img">
+          <img src="Images/FeastIcon.png" alt="AC Photo">
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
           </div>
         </div>
-      </footer>
+        <div class="p-4">
+          <h5 class="title-sm mt-3 mb-0 text-white">Anselmis 'AC' Columna</h5>
+          <small class="text-white">CS Student - AI & Machine Learning</small>
+          <div class="hline"></div>
+          <p class="text-white">Well skillful lorem Ipsum is not simply random text. It has roots in a place of
+            classical Latin literature from 45 BC</p>
+        </div>
+      </div>
 
-        <!-- Script Source Files -->
-        <!-- Our own JavaScript File -->
-        <script src="JS/app.js"></script>
-        <!-- jQuery for use with Bootstrap stuff -->
-        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-        <!-- Bootstrap 4.5 JS for use with Bootstrap stuff -->
-        <script src="js/bootstrap.min.js"></script>
-        <script src="JS/bootstrap.bundle.min.js"></script>
-        <!-- Popper JS for Modal Popups -->
-        <script src="JS/popper.min.js"></script>
-        <!-- Font Awesome for all icons -->
-        <script src="JS/all.min.js"></script>
+      <div class="col-lg-3 col-sm-6 team-member even">
+        <div class="team-member-img">
+          <img src="Images/FeastIcon.png" alt="Austin Photo">
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="p-4">
+          <h5 class="title-sm mt-3 mb-0 text-white">Austin Scheetz</h5>
+          <small class="text-white">CS Student - AI & Machine Learning</small>
+          <div class="hline"></div>
+          <p class="text-white">Well skillful lorem Ipsum is not simply random text. It has roots in a place of
+            classical Latin literature from 45 BC</p>
+        </div>
+      </div>
 
-    </body>
+      <div class="col-lg-3 col-sm-6 team-member">
+        <div class="team-member-img">
+          <img src="Images/Skippy_SGA_Headshot1.jpg" alt="">
+          <div class="social-icons">
+            <a href="mailto:sebastian.paquette0@gmail.com"><i class="fa fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/sebastianpaquette/" target="_blank"><i class="fa fa-address-card"
+                aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/thaskipper225/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/ThaSkipster225" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="p-4">
+          <h5 class="title-sm mt-3 mb-0 text-white">Sebastian 'Skippy' Paquette</h5>
+          <small class="text-white">CS Student - AI & Machine Learning</small>
+          <div class="hline"></div>
+          <p class="text-white">Well skillful lorem Ipsum is not simply random text. It has roots in a place of
+            classical Latin literature from 45 BC</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6 team-member even">
+        <div class="team-member-img">
+          <img src="Images/FeastIcon.png" alt="Dr. Cazalas Photo">
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="p-4">
+          <h5 class="title-sm mt-3 mb-0 text-white">Dr. Cazalas</h5>
+          <small class="text-white">Professor and Project Advisor</small>
+          <div class="hline"></div>
+          <p class="text-white">Well skillful lorem Ipsum is not simply random text. It has roots in a place of
+            classical Latin literature from 45 BC</p>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row text-light text-center py-2 justify-content-center">
+        <div class="col-sm-10 col-md-8 col-lg-2">
+          <p><a href="" id="Home">Return to Top</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Source Files -->
+  <!-- Our own JavaScript File -->
+  <script src="JS/app.js"></script>
+  <!-- jQuery for use with Bootstrap stuff -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- Bootstrap 4.5 JS for use with Bootstrap stuff -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="JS/bootstrap.bundle.min.js"></script>
+  <!-- Popper JS for Modal Popups -->
+  <script src="JS/popper.min.js"></script>
+  <!-- Font Awesome for all icons  Now is version 6.2.0-->
+  <script src="JS/all.min.js"></script>
+
+</body>
+
 </html>
