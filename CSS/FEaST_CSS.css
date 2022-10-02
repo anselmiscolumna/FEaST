@@ -86,14 +86,6 @@ a:hover .locations{
     border-radius: 50%;
 }
 
-.dropdown-item,
-.dropdown-divider  {
-    padding: 0 0 0 0;
-}
-
-hr .dropdown-divider {
-    padding-top: 0; 
-}
 /* End Navigation Section */
 
 /* Carousel Section */
@@ -109,7 +101,7 @@ hr .dropdown-divider {
 /*---Change Carousel Transition Speed --*/
 
 .carousel-item-next, .carousel-item-prev, .carousel-item.active {
-    transition: transform 1.2s ease !important;
+    transition: transform 1.2s ease;
 }
 
 .carousel-caption {
