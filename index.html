@@ -100,7 +100,17 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            Test Modal
+            <form>
+              <div class="mb-3 emailInput">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="passwordInput">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+            </form>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -437,7 +447,7 @@
   <!-- Font Awesome for all icons  Now is version 6.2.0-->
   <script src="JS/all.min.js"></script>
   <!-- Our own JavaScript File -->
-  <script src="JS/app.js"></script>
+  <script src="src/App.vue"></script>
 
 </body>
 
